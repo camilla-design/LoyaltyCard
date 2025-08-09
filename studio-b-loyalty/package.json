@@ -15,14 +15,14 @@
     "expo": "~53.0.20",
     "expo-barcode-scanner": "^13.0.1",
     "expo-crypto": "^14.1.5",
+    "expo-linear-gradient": "~14.1.5",
     "expo-status-bar": "~2.2.3",
     "firebase": "^12.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.5",
     "react-native-qrcode-svg": "^6.3.15",
-    "react-native-web": "^0.20.0",
-    "expo-linear-gradient": "~14.1.5"
+    "react-native-web": "^0.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

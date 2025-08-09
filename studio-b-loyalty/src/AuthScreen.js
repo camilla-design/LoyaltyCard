@@ -50,26 +50,29 @@ export default function AuthScreen({ onLogin }) {
   };
 
   return (
-    <>
-     <Image
-        
-        source={require('../assets/b-studio-logo.jpg')}
-      />
+  
     <View style={styles.container}>
       <Text>Email:</Text>
       <TextInput style={styles.input} value={email} onChangeText={setEmail} autoCapitalize="none" />
       <Text>Password:</Text>
       <TextInput style={styles.input} value={password} onChangeText={setPassword} secureTextEntry />
-      <Button color="#f9c2cc" title="Login" onPress={() => handleLogin(email, password)} />
-      <Button color="#f7dbe0"   title="Register" onPress={handleRegister} />
+      <Button color="#e8889d" title="Login" onPress={() => handleLogin(email, password)} />
+        <Text style={styles.registerText}>Get a stamp for your visit & unlock rewards! ✨ </Text>
+      <Button color="#000"  title="Join Today" onPress={handleRegister} />
     </View>
-    </>
+  
   );
 }
 
 const styles = StyleSheet.create({
   container: { padding: 20, },
-  input: { borderWidth: 1, marginVertical: 5, marginBottom: 3, padding: 8, borderColor: '#efa3b4', color: "#000", },
+  input: { borderWidth: 1, width: 350, marginVertical: 5, marginBottom: 3, padding: 8, borderColor: '#efa3b4', color: "#000", },
+  registerText: {
+    textAlign: 'center',
+    paddingTop: 10,
+    margin: 3,
+    fontSize: 15,
+  }
   
   
 });
